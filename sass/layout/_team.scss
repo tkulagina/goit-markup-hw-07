@@ -7,10 +7,10 @@
 }
 .photo-style {
     background-color: var(--third-brand-color);
-}
 
-.photo-style + .photo-style {
-    margin-left: 30px;
+    & + & {
+        margin-left: 30px;
+    }
 }
 
 .team-description {
@@ -57,20 +57,21 @@
     background-color: var(--third-brand-color);
 
     transition: background-color var(--time-duration) var(--timing-function);
+
+    & .social-list-icon {
+        fill: var(--fill-color);
+    
+        transition: fill var(--time-duration) var(--timing-function);
+    }
+    
+    &:hover .social-list-icon,
+    &:focus .social-list-icon {
+        fill: var(--third-brand-color); 
+    }
+    
+    &:hover,
+    &:focus {
+        background-color: var(--brand-color);
+    }
 }
 
-.social-list-link .social-list-icon {
-    fill: var(--fill-color);
-
-    transition: fill var(--time-duration) var(--timing-function);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: var(--third-brand-color); 
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--brand-color);
-}

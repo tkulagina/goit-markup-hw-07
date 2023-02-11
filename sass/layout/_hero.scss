@@ -50,9 +50,11 @@
     background-color: var(--brand-color); 
 
     transition: color var(--time-duration) var(--timing-function);
-}
 
-.button :hover,
-.button :focus {
-    color: var(--active-button-color);
+    & :hover,
+    & :focus {
+        color: var(--active-button-color);
+    }
 }
+    
+    

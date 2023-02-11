@@ -1,10 +1,10 @@
 .client-list {
     display: flex;
     justify-content: center;
-}
 
-.client-list .client-item + .client-item {
-    margin-left: 30px;
+    & .client-item + .client-item {
+        margin-left: 30px;
+    }
 }
 
 .client-list-link {
@@ -18,19 +18,22 @@
     border-radius: 4px;
    
     transition: border-color var(--time-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border-color: var(--brand-color);
+    }
 }
 
 .client-list-icon {
     fill: var(--fill-color);
     transition: fill var(--time-duration) var(--timing-function);
+
+    .client-list-link:hover &,
+    .client-list-link:focus & {
+        fill: var(--brand-color);    
+    }
 }
 
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon {
-    fill: var(--brand-color);    
-}
 
-.client-list-link:hover,
-.client-list-link:focus {
-    border-color: var(--brand-color);
-}
+
