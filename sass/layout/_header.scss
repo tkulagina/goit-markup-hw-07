@@ -3,18 +3,22 @@
     align-items: center;
 }
 
-.nav-link {
+.navigation {
     display: flex;
     align-items: center;
 }
 
-.menu {
+.menu__item + .menu__item {
+    margin-left: 50px;
+}
+
+.navigation__list {
     display: flex;
     margin-left: 93px;
 
-    & .item + .item {
+    /*& .item+.item{
         margin-left: 50px;
-    }
+    }*/
 
     & .link.current {
         color: var(--brand-color);
@@ -47,7 +51,7 @@
     align-items: center;
     margin-left: auto;
 
-    & .item + .item {
+    & .item + .item{
         margin-left: 50px;
     }
 
