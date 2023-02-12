@@ -12,11 +12,11 @@
     transition: opacity var(--time-duration) var(--timing-function),
         visibility var(--time-duration) var(--timing-function);
 
-    &.is-hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }  
+        &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
 }
 
 .modal {
@@ -39,7 +39,8 @@
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.8);   
-    }    
+    }
+    
 }
 
 .modal-close-btn {
@@ -80,11 +81,11 @@
 }
 
 .contact-form-fields {
-    display: block;  
-
+    display: block;
+    
     .contact-form & + & {
         margin-top: 10px;
-    }
+    }  
 }
 
 .form-fields-title {
@@ -188,15 +189,15 @@
         height: 15px;
         content: '';
         cursor: pointer;
-
+    
         border: 2px solid var(--title-color);
         border-radius: 4px;
     }
-
+    
     .contact-form-checkbox:focus + &::before {
         border: 2px solid var(--brand-color);
     }
-    
+
     .contact-form-checkbox:checked + &::before {
         background-image: url(../images/icon-check.svg);
         background-color: var(--brand-color);

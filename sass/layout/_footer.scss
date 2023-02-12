@@ -1,4 +1,4 @@
-.footer-style {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     
@@ -16,7 +16,7 @@
     margin-right: 70px;
 }
 
-.address-style {
+.container-address__style {
     margin-top: 20px;
 
     font-weight: 400;
@@ -26,13 +26,16 @@
     color: var(--third-brand-color);
 }
 
-.address {
+address {
     font-style: normal;
     margin: 0;
+}
+
+.address {
     margin-bottom: 9px; 
 }
 
-.footer-contact {
+.footer-list__contact {
     color: rgba(255, 255, 255, 0.6);
 
     transition: color var(--time-duration) var(--timing-function);
@@ -43,7 +46,7 @@
     }
 }
 
-.item-footer {
+.foorer-list__item {
     margin-bottom: 9px;
 }
 .footer-list :last-child {
@@ -51,7 +54,19 @@
 }
 
 .footer-social-list {
+    width: 206px;
     margin-right: 93px;
+
+    & .social-list__link {
+        background-color: rgba(255, 255, 255, 0.1);
+    
+        transition: background-color var(--time-duration) var(--timing-function);
+    }
+    
+    & .social-list__link:hover,
+    & .social-list__link:focus {
+        background-color: var(--brand-color);
+    }
 }
 
 .footer-add {
@@ -65,34 +80,8 @@
     color: var(--third-brand-color);
 }
 
-.footer-add-link {
-    display: flex;
-    justify-content: space-between;
-
-    & .footer-link-list + .footer-link-list {
-        margin-left: 10px;
-    }
-}
-
-.footer-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-
-    transition: background-color var(--time-duration) var(--timing-function);
-
-    &:hover,
-    &:focus {
-        background-color: var(--brand-color);
-    }
-}
-
-.footer-link-item {
-    fill: var(--third-brand-color);
+.social-list__link .social-list__icon-dark {
+    fill: var(--third-brand-color); 
 }
 
 .submit-mail {
@@ -105,6 +94,13 @@
     height: 50px;
     padding-left: 16px;
 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -115,23 +111,14 @@
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.03em;
-
+    
         color: rgba(255, 255, 255, 0.6);
-    } 
-}
-
-.submit-mail-field {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
-
+    }   
+    
     &:focus {
         outline: none;
         color: var(--third-brand-color);
-    }
+    }    
 }
 
 .submit-mail-button {

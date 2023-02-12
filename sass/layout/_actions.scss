@@ -1,8 +1,8 @@
-.section-actions {
+.actions {
     padding-bottom: 94px;
 }
 
-.list-actions {
+.actions__list {
     display: flex;
     flex-wrap: wrap;
 
@@ -22,11 +22,11 @@
     color: var(--title-color);
 }
 
-.item-actions {
+.actions__item {
     position: relative;
 }
 
-.actions-descript {
+.actions__descript {
     display: block;
     width: 100%;
     padding-top: 27px;

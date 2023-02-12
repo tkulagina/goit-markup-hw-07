@@ -1,10 +1,7 @@
 :root {
-    /*brand colors*/
     --brand-color: #2196F3;
     --secondary-brand-color: #000000;
     --third-brand-color: #FFFFFF;
-
-    /*colors*/
     --footer-color: #2F303A;
     --text-color: #757575;
     --title-color: #212121;
@@ -12,12 +9,8 @@
     --second-background-color: #F5F4FA;
     --active-button-color: #188CE8;
     --fill-color: #AFB1B8;
-
-    /*serif*/
     --main-font-family: 'Roboto', sans-serif;
     --logo-font-family: 'Raleway', sans-serif;
-
-    /*animation*/
     --time-duration: 250ms;
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }

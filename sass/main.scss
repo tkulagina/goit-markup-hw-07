@@ -1,11 +1,11 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-@import './base/common';
+@import './base/commons';
 @import './base/container';
 
+@import './components/social-list-link';
 @import './components/logo';
-@import './components/current';
 
 @import './layout/header';
 @import './layout/hero';
